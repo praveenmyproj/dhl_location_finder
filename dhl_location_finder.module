@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * DHL Location Finder module File.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dhl_location_finder_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pcv module.
+    case 'help.page.dhl_location_finder':
+      $output = '';
+      $output .= '<h2>' . t('About') . '</h2>';
+      $output .= '<p>' . t('Identifies the location based on the country and other details provided.') . '</p>';
+      $output .= '<h2>' . t('Configuration') . '</h2>';
+      $output .= '<p>' . t('Configuration options are available at <code>admin/config/dhl-location-settings</code>. The
+                            strength threshold; roles it applies to; and whether to display a success message can be chosen.');
+      $output .= '</p>';
+
+      return $output;
+  }
+}

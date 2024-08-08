@@ -1,0 +1,6 @@
+dlf.settings.form:
+  route_name: dlf.settings.form
+  parent: system.admin_config
+  title: 'DHL Location Finder Configurations'
+  description: 'Configure the DHL Location Finder module.'
+  weight: 5

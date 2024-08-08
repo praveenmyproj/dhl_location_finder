@@ -1,0 +1,6 @@
+name: DHL Location Finder
+type: module
+description: Module for dhl location finder.
+core_version_requirement: ^9 || ^10
+configure: dlf.settings.form
+package: Custom
