@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * DHL Location Install file.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function dhl_location_finder_uninstall() {
+  // Delete all dhl_location settings variables.
+  \Drupal::configFactory()->getEditable('dhl_location.settings')->delete();
+}
